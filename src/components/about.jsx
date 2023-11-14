@@ -7,7 +7,7 @@ class About extends React.Component {
        <hr />
        <h1 className="text-center custom-heading" style={{ color: 'rgb(5, 147, 5)' }}>ABOUT PIZZA</h1>
         <hr />
-        <div className="row">
+        <div className="row about-row">
           <div className="col-md-6">
             <img src="images/About..jpg" className="img-fluid" alt="Pizza" />
           </div>

@@ -19,13 +19,12 @@
     font-weight: bold;
 }
 
-
- /* ABOUT PIZZA */
-.row {
+                                                  /* ABOUT PIZZA */
+.about-row{
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
   }
 
  
@@ -34,7 +33,6 @@
     height: auto;
     padding: 10px;
     margin: 10px;
-    border: 1px solid #ccc;
   }
 
  
@@ -44,7 +42,7 @@
     margin-bottom: 15px;
     font-weight: 400;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #ffffff;
     text-align: justify;
     text-justify: inter-word;
     word-wrap: break-word;
@@ -52,55 +50,68 @@
 
 
   .col-md-6 {
-    background-color: #eeecec;
+    background-color: #37cb50;
     padding: 20px;
   }
 
-  @media (min-width: 992px) {
-  .col-md-6 {
-      padding: 40px;
-    }
-  }
 
-
-
-/* PIZZA TYPES */
-.row{
-    padding: 20px;
-    margin: 20px;
-    background-color: #eeecec;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-
+                                                            /* PIZZA TYPES */
+.type-box {
+  border-radius: 4px;
+  padding: 2px; 
+  background-color: #37cb50; 
+  margin: 1px;
 }
-.item {
-    background-color:#ccc;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
+
+.box2 {
+  padding: 5px; 
+  margin-left: 8px;
+}
+
+.thumbnail {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px; 
+  background-color: #fff; 
+  border-radius: 4px;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 4px; 
 }
 
 .item-title {
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center; 
-    padding: 8px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #b5ebab;
-}
-.item-text {
-    font-size: 14px;
-    font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: red;
+  color: #fff; 
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.item-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+.item-text {
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff; 
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  text-align: justify;
+  text-justify: inter-word; 
+  word-wrap: break-word;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.6;
+
 }
 
 
@@ -134,3 +145,43 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
+
+
+                          /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+  
+    .nav-color {
+      font-size: 18px; 
+      height: 70px; 
+    }
+  
+    .link-item {
+      font-size: 16px;
+    }
+    .carousel-inner img {
+      max-height: 300px;
+    }
+  
+  .col-md-6 {
+    padding: 40px;
+  }
+
+  .type-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .box2 {
+    width: auto; }
+
+ #footer {
+    height: 15vh;
+  }
+  .para {
+    font-size: 14px; 
+  }
+ 
+}
+ 
+
